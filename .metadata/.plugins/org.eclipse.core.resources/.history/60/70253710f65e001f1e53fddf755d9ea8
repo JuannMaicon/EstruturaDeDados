@@ -1,0 +1,15 @@
+package projeto_revisao;
+
+public class Teste {
+
+	public static void main(String[] args)throws Exception {
+		projeto_revisao.Vetor vetor = new Vetor(5);
+	
+		vetor.adiciona("Elemento 1");
+		vetor.adiciona("Elemento 2");
+		
+	System.out.println("A quantidade de informações no vetor é: " + vetor.tamanho());
+	System.out.println("Dados do vetor"+vetor.toString());
+	}
+
+}

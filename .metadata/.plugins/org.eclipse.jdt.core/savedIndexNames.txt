@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+D:\TerceiroSemestre\estruturaDeDados\.metadata\.plugins\org.eclipse.jdt.core
+1831134267.index
+1865797976.index
+2415955579.index
+2024464687.index
+1353237523.index
+1558242172.index
