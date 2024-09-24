@@ -5,7 +5,7 @@ public class InsertSort {
     public static void main(String[] args) {
 
         // criando um vetor de numeros inteiros de 10 posiçoes
-        int[] vetor = new int[10];
+        int[] vetor = new int[2000];
 
         // inserindo valores no vetor 
         for (int i = 0; i < vetor.length; i++) {
