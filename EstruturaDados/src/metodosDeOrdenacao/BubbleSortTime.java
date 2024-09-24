@@ -1,20 +1,18 @@
 package metodosDeOrdenacao;
 
-
-public class BubleSort {
+public class BubbleSortTime {
 
     public static void main(String[] args) {
-        // criando um vetor de numeros inteiros de 10 posiçoes
-        int[] vetor = new int[10];
+        int[] vetor = new int[100];
 
-        // inserindo valores no vetor 
         for (int i = 0; i < vetor.length; i++) {
             vetor[i] = (int) (Math.random() * vetor.length);
-            //exibindo os valores do vetor
-            System.out.println(vetor[i]);
         }
 
-        //Método de ordenaçao BubbleSort
+        //variavel que registra o tempo de execução no inicio 
+        long inicio = System.currentTimeMillis();
+
+        //metodo de ordenaçao bubbleSort
         int aux = 0;
         for (int i = 0; i < vetor.length; i++) {
             for (int j = 0; j < vetor.length; j++) {
@@ -24,11 +22,11 @@ public class BubleSort {
                 }
             }
         }
-        System.out.println("Vetor Ordenado: ");
-        for (int i = 0; i <vetor.length; i++) {
-            System.out.println(vetor[i]);
-            
-        }
-    }
 
+        //variavel que registra o tempo de execução no inicio 
+        long fim = System.currentTimeMillis();
+
+//exibir tempo de execução
+        System.out.println("Tempo De Execução: " + (fim - inicio));
+    }
 }
