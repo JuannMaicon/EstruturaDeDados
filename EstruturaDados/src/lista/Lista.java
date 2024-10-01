@@ -1,13 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package lista;
 
-/**
- *
- * @author juan.masantos
- */
 public class Lista {
+    public static void main(String[] args) {
+        ListaEncadeada<String> lista = new ListaEncadeada<>();
+        System.out.println("Tamanho Da Lista = "+lista.getTamanho());
+        lista.adiciona("Claudio");
+        
+        System.out.println(lista);
+        System.out.println("Tamanho Da Lista = "+lista.getTamanho());
+        System.out.println("Inicio Da Lista = " +lista.getInicio().getElemento());
+        System.out.println("Fim Lista = " + lista.getFim().getElemento());
+        
+        lista.adiciona("Camila");
+         
+        System.out.println(lista);
+        System.out.println("Tamanho Da Lista = "+lista.getTamanho());
+        System.out.println("Inicio Da Lista = " +lista.getInicio().getElemento());
+        System.out.println("Fim Lista = " + lista.getFim().getElemento());
+        
+        System.out.println("Elemento Na Posição 2 = "+ lista.get(2).getElemento());
+    }
     
 }

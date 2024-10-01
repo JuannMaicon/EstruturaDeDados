@@ -53,5 +53,15 @@ public class ListaEncadeada<Tipo> {
         }
         this.tamanho++;
     }
+    //Método Para Buscar o Nó
+    public No get(int posicao){
+        No atual = this.inicio;
+        for (int i = 0; i < posicao; i++) {
+            if(atual.getProximo()!= null){
+                atual = atual.getProximo();
+            }
+        }
+        return atual;
+    }
 
 }
