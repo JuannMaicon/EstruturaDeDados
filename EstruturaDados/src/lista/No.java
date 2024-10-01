@@ -8,10 +8,6 @@ public class No<Tipo> {
         this.elemento =  elemento;
         this.proximo = null;
     }
-    public No(Tipo elemento, No<Tipo> proximo){
-        this.elemento = elemento;
-        this.proximo = proximo;
-    }
 
     public Tipo getElemento() {
         return elemento;

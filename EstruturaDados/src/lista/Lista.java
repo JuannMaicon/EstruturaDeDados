@@ -14,7 +14,7 @@ public class Lista {
         System.out.println("Inicio Da Lista = " +lista.getInicio().getElemento());
         System.out.println("Fim Lista = " + lista.getFim().getElemento());
         
-        lista.remover("Camila");
+        lista.remover("Claudio");
          
         System.out.println(lista);
         System.out.println("Tamanho Da Lista = "+lista.getTamanho());

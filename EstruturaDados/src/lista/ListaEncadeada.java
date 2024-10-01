@@ -8,7 +8,6 @@ public class ListaEncadeada<Tipo> {
 
     //Método Construtor//
     public ListaEncadeada() {
-
         this.tamanho = 0;
     }
     //Métodos De Acesso//
@@ -69,6 +68,17 @@ public class ListaEncadeada<Tipo> {
         No atual = this.inicio;
         for (int i = 0; i < this.getTamanho(); i++) {
             if(atual.getElemento().equals(elemento)){
+                if (this.tamanho == 1){
+                    this.inicio = null;
+                    this.fim = null;
+                }else if (atual == inicio){
+                    this.inicio = atual.getProximo();
+                    atual.setProximo((null));
+                }else if (atual == fim){
+                    this.fim = anterior;
+                    anterior.setProximo(null);
+                }else 
+                    
                 anterior.setProximo(atual.getProximo());
                 atual = null;
                 this.tamanho--;
