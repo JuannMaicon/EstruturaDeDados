@@ -9,6 +9,7 @@ public class Lista {
         lista.adiciona("Miguel");
         lista.adiciona("Elis");
         
+        System.out.println("Hellow");
         System.out.println(lista);
         System.out.println("Tamanho Da Lista = "+lista.getTamanho());
         System.out.println("Inicio Da Lista = " +lista.getInicio().getElemento());
@@ -20,6 +21,7 @@ public class Lista {
         System.out.println("Tamanho Da Lista = "+lista.getTamanho());
         System.out.println("Inicio Da Lista = " +lista.getInicio().getElemento());
         System.out.println("Fim Lista = " + lista.getFim().getElemento());
+        
         
        
     }
